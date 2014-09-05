@@ -8,7 +8,35 @@
 import scrapy
 
 
-class FpproductsItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class BankPointItem(scrapy.Item):
+    bankName = scrapy.Field()
+    pointName = scrapy.Field()
+    address = scrapy.Field()
+    phone = scrapy.Field()
+    province = scrapy.Field()
+    city = scrapy.Field()
+
+
+class BankProductItem(scrapy.Item):
+    productID = scrapy.Field()
+    productName = scrapy.Field()
+    bankName = scrapy.Field()
+    publishCitys = scrapy.Field()
+    currency = scrapy.Field()
+    rate = scrapy.Field()
+    sellStartDate = scrapy.Field()
+    sellEndDate = scrapy.Field()
+    mixSellAmount = scrapy.Field()
+    sellAmountTimes = scrapy.Field()
+    managerPeriod = scrapy.Field()
+    isBreakEven = scrapy.Field()
+
+    investWay = scrapy.Field()
+    productType = scrapy.Field()
+    incomeType = scrapy.Field()
+    isBankStop = scrapy.Field()
+    isCustomerRedeem = scrapy.Field()
+    incomeMethod = scrapy.Field()
+
+    bankStopCondition = scrapy.Field()
+    riskPrompt = scrapy.Field()

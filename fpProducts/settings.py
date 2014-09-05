@@ -12,6 +12,7 @@ BOT_NAME = 'fpProducts'
 
 SPIDER_MODULES = ['fpProducts.spiders']
 NEWSPIDER_MODULE = 'fpProducts.spiders'
+ITEM_PIPELINES = ['fpProducts.pipelines.BankProductPipline']
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'fpProducts (+http://www.yourdomain.com)'
